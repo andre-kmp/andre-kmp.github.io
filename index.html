@@ -7,36 +7,75 @@
     <title>André Klaic</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Importando fontes -->
+    <style>
+        @font-face {
+            font-family: "EvilEmpire";
+            src: url("fonts/EvilEmpire.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Unageo";
+            src: url("fonts/Unageo-Regular.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "UnageoBold";
+            src: url("fonts/Unageo-Bold.ttf") format("truetype");
+        }
+    </style>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-        <h1>André Klaic</h1>
-        <p>Meu espaço para publicação de projetos, ideias e experimentos.</p>
+        <div class="logo">André Klaic</div>
+        <nav>
+            <a href="#">Portfólio</a>
+            <a href="#">Sobre mim</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Sobre Mim</h2>
-            <p>Sou apaixonado por dados, da estrutura à análise.</p>
-        </section>
 
-        <section>
-            <h2>Projetos</h2>
-            <ul>
-                <li><a href="#">Modelagem Preditiva</a></li>
-                <li><a href="#">Análises Estatísticas</a></li>
-                <li><a href="#">Ferramentas em Python</a></li>
-                <li><a href="#">Notas de aula</a></li>
-            </ul>
-        </section>
+    <!-- PRIMEIRA SECTION -->
+    <section class="intro">
+        <h1>André Klaic</h1>
+        <p>Sou apaixonado por dados, da estrutura à análise, e gosto de criar projetos que unem técnica e criatividade.</p>
+    </section>
 
-        <section>
-            <h2>Contato</h2>
-            <p>Você pode me encontrar no <a href="https://github.com/andre-kmp">GitHub</a> ou enviar um e-mail para <a href="mailto:andreklaic@gmail.com">andreklaic@gmail.com</a>.</p>
-        </section>
-    </main>
+    <!-- SEGUNDA SECTION -->
+    <section class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-grid">
+            <a href="#" class="portfolio-item">
+                <h3>Projeto 1</h3>
+                <img src="images/projeto1.jpg" alt="Projeto 1">
+            </a>
+            <a href="#" class="portfolio-item">
+                <h3>Projeto 2</h3>
+                <img src="images/projeto2.jpg" alt="Projeto 2">
+            </a>
+            <a href="#" class="portfolio-item">
+                <h3>Projeto 3</h3>
+                <img src="images/projeto3.jpg" alt="Projeto 3">
+            </a>
+        </div>
+    </section>
 
+    <!-- TERCEIRA SECTION -->
+    <section class="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato ou siga minhas redes:</p>
+        <p>
+            <a href="#">GitHub</a> | 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <p>© 2025 andre-kmp — Desenvolvido com auxílio do ChatGPT (GPT-5, OpenAI)</p>
     </footer>
+
 </body>
 </html>
