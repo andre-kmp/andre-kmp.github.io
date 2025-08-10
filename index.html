@@ -30,17 +30,28 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <div class="logo">André Klaic</div>
-            <nav>
-                <a href="#">Portfólio</a>
-                <a href="#">Sobre mim</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </div>
-    </header>
+	<header>
+	  <div class="header-container">
+	    <div class="logo">André Klaic</div>
+
+	    <!-- Menu de navegação -->
+	    <nav>
+	      <a href="#portfolio">Portfólio</a>
+	      <a href="#sobre">Sobre mim</a>
+	      <a href="#contato">Contato</a>
+	    </nav>
+
+	    <!-- Botão hambúrguer (visível no mobile) -->
+	    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+	  </div>
+	</header>
+
+	<script>
+	  function toggleMenu() {
+	    document.querySelector('header nav').classList.toggle('show');
+	  }
+	</script>
+
 
 	<div class="content-wrapper">
 	    <main class="main-container">

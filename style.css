@@ -23,30 +23,43 @@ body {
 /* HEADER */
 header {
   background: linear-gradient(30deg, #55308d, #2a6099);
-  height: 80px;
+  height:80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header-container {
-  width: 1100px;
-  width: 50%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
+  flex-wrap: nowrap;
   padding: 0 1rem;
+  max-width: 90%;
+  width: 1100px;
+  position: relative;
 }
+
+
 
 /* Logo */
 header .logo {
   font-family: "EvilEmpire", sans-serif;
-  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  font-size: 2.5rem; /* tamanho fixo, sem diminuir no mobile */
   color: #ff4000;
   text-shadow: 0.033em 0.033em 0px black;
+  margin-left: 0.5rem; /* margem mínima para ficar coladinho à esquerda */
 }
 
-/* Navegação */
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none; /* escondido no desktop */
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navegação (desktop) */
 header nav {
   display: flex;
   gap: 2rem;
@@ -57,13 +70,62 @@ header nav a {
   text-decoration: none;
   font-family: "Unageo", sans-serif;
   font-size: clamp(1.2rem, 2vw, 1rem);
-  transition: text-decoration 0.3s;
+  transition: background-color 0.3s ease;
+  padding: 0.2rem 0.5rem;
 }
 
 header nav a:hover {
-  font-family: UnageoBold;
-  background-color: #ff4000
+  font-family: "UnageoBold", sans-serif;
+  background-color: #ff4000;
 }
+
+@media (max-width: 768px) {
+  header {
+    height: 80px; /* mantém altura fixa */
+    padding: 0 1rem; /* padding horizontal para espaçamento */
+  }
+
+  .header-container {
+    flex-direction: row !important; /* força linha única */
+    flex-wrap: nowrap !important; /* sem quebra */
+    justify-content: space-between;
+    align-items: center; /* centraliza verticalmente */
+  }
+
+  .menu-toggle {
+    display: block; /* botão visível no mobile */
+  }
+
+  header nav {
+    display: none; /* esconde menu padrão */
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* logo + header altura */
+    right: 0;
+    width: 200px;
+    background: linear-gradient(30deg, #55308d, #2a6099);
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+
+  header nav.show {
+    display: flex;
+  }
+
+  header nav a {
+    padding: 0.5rem 0;
+  }
+
+  /* Logo mantém tamanho fixo e margem */
+  header .logo {
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+
 
 /* CONTAINER PRINCIPAL */
 
