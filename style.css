@@ -176,7 +176,7 @@ section {
 
 /* INTRO */
 .intro {
-    max-width: 800px;
+    max-width: 66%;
     margin-left: 0;
 }
 
@@ -306,6 +306,14 @@ footer {
 
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
+
+	.main-container {
+	    max-width: 100%;
+	    margin: 3vh auto 0 auto;
+	    padding-left: 5vh;
+	    padding-right: 5vh;
+	}
+
     header {
         height: auto;
         padding: 1rem;
@@ -319,17 +327,36 @@ footer {
         justify-content: center;
         gap: 1rem;
     }
+
+	.intro {
+	    max-width: 100%;
+	    margin-left: 0;
+	}
+
     .intro h1 {
+        max-width: 100%;
         font-size: 4rem;
     }
 }
 
 /* Para telas menores que 500px */
 @media (max-width: 500px) {
+
+	.main-container {
+	    max-width: 100%;
+	    margin: 3vh auto 0 auto;
+	    padding-left: 2vh;
+	    padding-right: 2vh;
+	}
+	
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+    intro {
+    	max-width: 100%;
+    }
     .intro h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        max-width: 100%;
     }
 }
