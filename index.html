@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="André Klaic - Meu espaço para publicação de projetos, ideias e experimentos sobre dados e análise.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="André Klaic - Meu espaço para publicação de projetos, ideias e experimentos sobre dados e análise." />
     <title>André Klaic</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Importando fontes -->
     <style>
         @font-face {
             font-family: "EvilEmpire";
-            src: url("fonts/EvilEmpire.ttf") format("truetype");
+            src: url("fonts/Evil Empire.otf") format("truetype");
         }
         @font-face {
             font-family: "Unageo";
@@ -22,59 +22,75 @@
             font-family: "UnageoBold";
             src: url("fonts/Unageo-Bold.ttf") format("truetype");
         }
+        @font-face {
+            font-family: "UnageoBlack";
+            src: url("fonts/Unageo-Black.ttf") format("truetype");
+        }
     </style>
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
-        <div class="logo">André Klaic</div>
-        <nav>
-            <a href="#">Portfólio</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Contato</a>
-        </nav>
+        <div class="header-container">
+            <div class="logo">André Klaic</div>
+            <nav>
+                <a href="#">Portfólio</a>
+                <a href="#">Sobre mim</a>
+                <a href="file:///home/andrekmp/Projects/andre-kmp.github.io/index.html/#contact">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- PRIMEIRA SECTION -->
-    <section class="intro">
-        <h1>André Klaic</h1>
-        <p>Sou apaixonado por dados, da estrutura à análise, e gosto de criar projetos que unem técnica e criatividade.</p>
-    </section>
+	<div class="content-wrapper">
+	    <main class="main-container">
+	        <!-- PRIMEIRA SECTION -->
+	        <section class="intro">
+	            <h1>André Klaic</h1>
+	            <p>Estou na área de dados desde 2019, quando fiz a minha primeira Iniciação Científica (PIBIC - CNPq) na área de estatística aplicada. De lá para cá, passei por dados de diferentes áreas, como comportamento animal, redes sem fio e colheita de energia. Nos últimos três anos, trabalhei com dados de pesquisa de mercado. Sou Engenheiro de Biossistemas, formado para pensar de forma sistêmica e estruturar problemas como um engenheiro. Hoje curso Ciência de Dados na UNIVESP e mapeio programas de pós-graduação.</p>
+	        </section>
 
-    <!-- SEGUNDA SECTION -->
-    <section class="portfolio">
-        <h2>Portfólio</h2>
-        <div class="portfolio-grid">
-            <a href="#" class="portfolio-item">
-                <h3>Projeto 1</h3>
-                <img src="images/projeto1.jpg" alt="Projeto 1">
-            </a>
-            <a href="#" class="portfolio-item">
-                <h3>Projeto 2</h3>
-                <img src="images/projeto2.jpg" alt="Projeto 2">
-            </a>
-            <a href="#" class="portfolio-item">
-                <h3>Projeto 3</h3>
-                <img src="images/projeto3.jpg" alt="Projeto 3">
-            </a>
-        </div>
-    </section>
+	        <!-- SEGUNDA SECTION -->
+	        <section class="portfolio">
+	            <h2>Portfólio</h2>
+	            <div class="portfolio-grid">
+	                <a href="#" class="portfolio-item">
+	                    <img src="images/project1.jpg" alt="Projeto 1">
+	                    <div class="divider"></div>
+	                    <h3>Monitoramento climático</h3>
+	                    <p>Título e imagem meramente ilustrativos, pois esse site ainda não está oficialmente no ar :)</p>
+	                </a>
+	                <a href="#" class="portfolio-item">
+	                    <img src="images/project2.jpg" alt="Projeto 2">
+	                    <div class="divider"></div>
+	                    <h3>Visualizando dados categóricos</h3>
+	                    <p>Título e imagem meramente ilustrativos, pois esse site ainda não está oficialmente no ar :)</p>
+	                </a>
+	                <a href="#" class="portfolio-item">
+	                    <img src="images/project3.jpg" alt="Projeto 3">
+	                    <div class="divider"></div>
+	                    <h3>Configurando o ambiente</h3>
+	                    <p>Título e imagem meramente ilustrativos, pois esse site ainda não está oficialmente no ar :)</p>
+	                </a>
+	            </div>
+	        </section>
 
-    <!-- TERCEIRA SECTION -->
-    <section class="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato ou siga minhas redes:</p>
-        <p>
-            <a href="#">GitHub</a> | 
-            <a href="#">LinkedIn</a> | 
-            <a href="#">Instagram</a>
-        </p>
-    </section>
+	        <!-- TERCEIRA SECTION -->
+	        <section class="contact">
+	            <h2>Contato</h2>
+	            <p>Entre em contato <a href="mailto:andreklaic@gmail.com">mandando um e-mail</a> ou siga minhas redes:</p>
+	            <p>
+	                <a href="https://github.com/andre-kmp">GitHub</a> | 
+	                <a href="https://linkedin.com/in/andreklaic">LinkedIn</a> | 
+	                <a href="https://www.kaggle.com/andrekmp">Kaggle</a>
+	            </p>
+	        </section>
+	    </main>
+	</div>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2025 andre-kmp — Desenvolvido com auxílio do ChatGPT (GPT-5, OpenAI)</p>
+        <p>© 2025 andre-kmp — CSS e HTML desenvolvidos com auxílio do ChatGPT (GPT-5, OpenAI)</p>
     </footer>
 
 </body>

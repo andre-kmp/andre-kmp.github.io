@@ -5,125 +5,240 @@
     box-sizing: border-box;
 }
 
+
 /* FONTES BASE */
 body {
     font-family: "Unageo", sans-serif;
+    font-size: 24px;
     background: white;
-    color: black;
+    color: white;
 }
 
 /* HEADER */
 header {
-    height: 60px;
-    background: linear-gradient(30deg, #55308d, #2a6099);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
+  background: linear-gradient(30deg, #55308d, #2a6099);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.header-container {
+  width: 1100px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Logo */
 header .logo {
-    font-family: "EvilEmpire", sans-serif;
-    font-size: 1.5rem;
-    color: white;
+  font-family: "EvilEmpire", sans-serif;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  color: #ff4000;
+  text-shadow: 0.033em 0.033em 0px black;
+}
+
+/* Navegação */
+header nav {
+  display: flex;
+  gap: 2rem;
 }
 
 header nav a {
-    margin-left: 2rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Unageo", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1rem);
+  transition: text-decoration 0.3s;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+  font-family: UnageoBold;
+  background-color: #ff4000
+}
+
+/* CONTAINER PRINCIPAL */
+
+.content-wrapper {
+  background-color: #55308d;
+  background-image:
+    linear-gradient(rgba(51, 51, 51, .1) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(51, 51, 51, .1) 2px, transparent 2px),
+    linear-gradient(rgba(51,51,51,.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(51,51,51,.1) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  background-repeat: repeat;
+  min-height: calc(100vh - 80px - 60px); /* Ajuste 80px do header e 60px do footer (exemplo) */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.main-container {
+    max-width: 70%;
+    margin: 10vh auto 0 auto;
+    padding: 0 2rem;
 }
 
 /* SECTIONS */
 section {
-    padding: 4rem 2rem;
+    padding: 4rem 0;
 }
 
 /* INTRO */
 .intro {
     max-width: 800px;
-    margin-left: 2rem;
+    margin-left: 0;
 }
 
 .intro h1 {
     font-family: "EvilEmpire", sans-serif;
-    font-size: 3rem;
+    font-size: clamp(3rem, 8vw, 7rem);
     margin-bottom: 1rem;
+    -webkit-text-stroke: 1px #000000; /* contorno preto de 1px */
+    -webkit-text-fill-color: #ffffff; /* cor interna da fonte */
+    text-shadow: 0.03em 0.03em 0em #ff4000;
 }
 
 /* PORTFOLIO */
-.portfolio h2 {
-    text-align: center;
-    font-family: "Unageo", sans-serif;
-    margin-bottom: 2rem;
+
+.portfolio {
+    max-width: 100%;
+    margin: 0;
 }
 
+.portfolio h2 {
+    text-align: left;
+    font-family: "EvilEmpire", sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 2rem;
+    -webkit-text-stroke: 1px #333333; /* contorno preto de 1px */
+    -webkit-text-fill-color: white; /* cor interna da fonte */
+    text-shadow: 0.03em 0.03em 0em #ff4000;
+}
+
+/* Grid do portfólio flexível */
 .portfolio-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .portfolio-item {
-    text-align: center;
-    width: 250px;
-    text-decoration: none;
-    color: black;
+  border: 2px solid black; /* a moldura */
+  padding: 1rem;
+  max-width: 450px;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* espaçamento vertical */
+  position: relative;
+  background: white;
+  transition: box-shadow 0.01s ease-in-out;
+}
+
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.divider {
+  height: 2px;
+  background-color: black;
+  width: 100%; /* o corte no meio, metade da largura */
+  margin: 0 auto;
 }
 
 .portfolio-item h3 {
-    font-family: "UnageoBold", sans-serif;
-    margin-bottom: 1rem;
+  font-family: "Unageo", sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  margin: 0;
 }
 
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+.portfolio-item p {
+  font-family: "Unageo", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
 }
+
 
 /* CONTATO */
-.contact h2 {
-    font-family: "Unageo", sans-serif;
-    margin-bottom: 1rem;
+.contact {
+    max-width: 100%;
+    margin: 0;
+    font-size: 18px;
 }
+
+.contact a {
+  font-family: UnageoBold;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease; /* animação suave */
+}
+
+.contact a:hover {
+  font-family: UnageoBlack;
+  font-size: 1.2rem; /* aumenta a fonte no hover */
+}
+
+.contact h2 {
+    text-align: left;
+    font-family: "EvilEmpire", sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 2rem;
+    -webkit-text-stroke: 1px #333333; /* contorno preto de 1px */
+    -webkit-text-fill-color: white; /* cor interna da fonte */
+    text-shadow: 0.03em 0.03em 0em #ff4000;
+}
+
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #eee;
+    background: linear-gradient(30deg, #55308d, #2a6099);
     font-size: 0.9rem;
 }
 
 /* RESPONSIVIDADE */
+
+/* Para telas menores que 768px */
 @media (max-width: 768px) {
     header {
-        padding: 0 1rem;
+        height: auto;
+        padding: 1rem;
     }
-    header nav a {
-        margin-left: 1rem;
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
     }
-    .intro {
-        margin-left: 1rem;
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
-    .portfolio-item {
-        width: 200px;
+    .intro h1 {
+        font-size: 4rem;
     }
 }
 
+/* Para telas menores que 500px */
 @media (max-width: 500px) {
     .portfolio-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
-    .portfolio-item {
-        width: 80%;
+    .intro h1 {
+        font-size: 2.5rem;
     }
 }
