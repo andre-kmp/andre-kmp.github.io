@@ -188,7 +188,7 @@ section {
     margin-bottom: 1rem;
     -webkit-text-stroke: 1px #000000; /* contorno preto de 1px */
     -webkit-text-fill-color: #ffffff; /* cor interna da fonte */
-    text-shadow: 0.03em 0.03em 0em #ff4000;
+    text-shadow: 0.05em 0.05em 0em #ff4000;
 }
 
 /* PORTFOLIO */
@@ -205,7 +205,7 @@ section {
     margin-bottom: 2rem;
     -webkit-text-stroke: 1px #333333; /* contorno preto de 1px */
     -webkit-text-fill-color: white; /* cor interna da fonte */
-    text-shadow: 0.03em 0.03em 0em #ff4000;
+    text-shadow: 0.05em 0.05em 0em #ff4000;
 }
 
 /* Grid do portfólio flexível */
@@ -292,9 +292,32 @@ section {
     margin-bottom: 2rem;
     -webkit-text-stroke: 1px #333333; /* contorno preto de 1px */
     -webkit-text-fill-color: white; /* cor interna da fonte */
-    text-shadow: 0.03em 0.03em 0em #ff4000;
+    text-shadow: 0.05em 0.05em 0em #ff4000;
 }
 
+.back-to-top {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.back-to-top a {
+  display: inline-block;
+  background-color: #2a6099;
+  color: white;
+  font-family: "Unageo", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0.33em 0.33em 0em #000000;
+  transition: background-color 0.01s ease;
+  cursor: pointer;
+}
+
+.back-to-top a:hover {
+  background-color: #ff4000;
+  fontfamily: "Unageo", sans-serif;
+  
+}
 
 /* FOOTER */
 footer {
