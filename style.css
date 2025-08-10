@@ -51,6 +51,17 @@ header .logo {
   margin-left: 0.5rem; /* margem mínima para ficar coladinho à esquerda */
 }
 
+header .logo a {
+  color: #ff4000;               /* mesma cor da logo */
+  text-decoration: none;        /* remove o sublinhado */
+  font-family: "EvilEmpire", sans-serif; /* mesma fonte */
+  font-size: 2.5rem;            /* mesmo tamanho */
+  text-shadow: 0.033em 0.033em 0px black;
+  display: inline-block;        /* evita problemas de espaçamento */
+  cursor: pointer;              /* opcional, mostra que é clicável */
+}
+
+
 /* Botão hambúrguer */
 .menu-toggle {
   display: none; /* escondido no desktop */
