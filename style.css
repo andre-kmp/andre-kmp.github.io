@@ -15,7 +15,7 @@ html {
 /* FONTES BASE */
 body {
     font-family: "Unageo", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     background: white;
     color: white;
 }
@@ -23,7 +23,7 @@ body {
 /* HEADER */
 header {
   background: linear-gradient(30deg, #55308d, #2a6099);
-  height:80px;
+  height:44px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +63,7 @@ header .logo {
 header nav {
   display: flex;
   gap: 2rem;
+  align-items: baseline;
 }
 
 header nav a {
@@ -70,8 +71,10 @@ header nav a {
   text-decoration: none;
   font-family: "Unageo", sans-serif;
   font-size: clamp(1.2rem, 2vw, 1rem);
-  transition: background-color 0.3s ease;
+  line-height: 1;
   padding: 0.5rem 0rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 header nav a:hover {
@@ -81,7 +84,7 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   header {
-    height: 80px; /* mantém altura fixa */
+    height: 44px; /* mantém altura fixa */
     padding: 0 1rem; /* padding horizontal para espaçamento */
   }
 
@@ -118,7 +121,7 @@ header nav a:hover {
     display: none; /* esconde menu padrão */
     flex-direction: column;
     position: absolute;
-    top: 80px; /* logo + header altura */
+    top: 44px; /* logo + header altura */
     right: 0;
     width: 200px;
     background: linear-gradient(30deg, #55308d, #2a6099);
@@ -144,7 +147,6 @@ header nav a:hover {
 }
 
 
-
 /* CONTAINER PRINCIPAL */
 
 .content-wrapper {
@@ -157,7 +159,7 @@ header nav a:hover {
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   background-repeat: repeat;
-  min-height: calc(100vh - 80px - 60px); /* Ajuste 80px do header e 60px do footer (exemplo) */
+  min-height: calc(100vh - 44px - 60px); /* Ajuste 80px do header e 60px do footer (exemplo) */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -315,7 +317,7 @@ footer {
 	}
 
     header {
-        height: auto;
+        height: 44px;
         padding: 1rem;
     }
     .header-container {
