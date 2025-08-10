@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+html {
+
+    scroll-behavior: smooth;
+	
+}
+
 
 /* FONTES BASE */
 body {
@@ -142,6 +148,11 @@ section {
 }
 
 
+.portfolio-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0.25em 0.25em 0em #ff4000;
+}
+
 .portfolio-item img {
   width: 100%;
   height: auto;
@@ -184,12 +195,12 @@ section {
   font-family: UnageoBold;
   color: inherit;
   text-decoration: none;
-  transition: all 0.3s ease; /* animação suave */
+  transition: all 0.01s ease; /* animação suave */
 }
 
 .contact a:hover {
   font-family: UnageoBlack;
-  font-size: 1.2rem; /* aumenta a fonte no hover */
+  background: #f04000; /* aumenta a fonte no hover */
 }
 
 .contact h2 {
