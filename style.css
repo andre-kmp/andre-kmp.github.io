@@ -195,8 +195,9 @@ section {
 .intro h1 {
     font-family: "EvilEmpire", sans-serif;
     font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 500;
     margin-bottom: 1rem;
-    -webkit-text-stroke: 0.66px #000000; /* contorno preto de 1px */
+    -webkit-text-stroke: 1px #000000; /* contorno preto de 1px */
     -webkit-text-fill-color: #F8F8FF; /* cor interna da fonte */
     text-shadow: 0.05em 0.05em 0em #ff4000;
 }
@@ -212,8 +213,9 @@ section {
     text-align: left;
     font-family: "EvilEmpire", sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 500;
     margin-bottom: 1rem;
-    -webkit-text-stroke: 0.66px #000000; /* contorno preto de 1px */
+    -webkit-text-stroke: 1px #000000; /* contorno preto de 1px */
     -webkit-text-fill-color: #f8f8ff; /* cor interna da fonte */
     text-shadow: 0.05em 0.05em 0em #ff4000;
 }
@@ -299,6 +301,7 @@ section {
     text-align: left;
     font-family: "EvilEmpire", sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 500;
     margin-bottom: 0.6rem;
     -webkit-text-stroke: 0.66px #000000; /* contorno preto de 1px */
     -webkit-text-fill-color: #f8f8ff; /* cor interna da fonte */
