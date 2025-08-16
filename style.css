@@ -45,31 +45,30 @@ header {
 /* Logo */
 header .logo {
   font-family: "EvilEmpire", sans-serif;
-  font-size: 2rem; /* tamanho fixo, sem diminuir no mobile */
+  font-size: 2rem;
   color: #ff4000;
   text-shadow: 0.035em 0.035em 0px black;
-  margin-left: 0.5rem; /* margem mínima para ficar coladinho à esquerda */
+  margin-left: 0.5rem;
 }
 
 header .logo a {
-  color: #ff4000;               /* mesma cor da logo */
-  text-decoration: none;        /* remove o sublinhado */
-  font-family: "EvilEmpire", sans-serif; /* mesma fonte */
-  font-size: 2rem;            /* mesmo tamanho */
+  color: #ff4000;
+  text-decoration: none;
+  font-family: "EvilEmpire", sans-serif;
+  font-size: 2rem;
   text-shadow: 0.05em 0.05em 0px black;
-  display: inline-block;        /* evita problemas de espaçamento */
-  cursor: pointer;              /* opcional, mostra que é clicável */
+  display: inline-block;
+  cursor: pointer;
 }
 
-/* Botão hambúrguer */
 .menu-toggle {
-  display: none; /* escondido no desktop */
+  display: none;
   font-size: 2rem;
   color: #f8f8ff;
   cursor: pointer;
 }
 
-/* Navegação (desktop) */
+
 header nav {
   display: flex;
   gap: 2rem;
@@ -94,44 +93,44 @@ header nav a:hover {
 
 @media (max-width: 768px) {
   header {
-    height: 44px; /* mantém altura fixa */
-    padding: 0 1rem; /* padding horizontal para espaçamento */
+    height: 44px;
+    padding: 0 1rem;
   }
 
   .header-container {
-    flex-direction: row !important; /* força linha única */
-    flex-wrap: nowrap !important; /* sem quebra */
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     justify-content: space-between;
-    align-items: center; /* centraliza verticalmente */
-    padding-left: 0.5rem; /* diminui a margem esquerda */
-    padding-right: 0.5rem; /* diminui a margem direita também */
-    max-width: 100%; /* para ocupar mais espaço */
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100%;
   }
 
   .main-container {
-    max-width: 95%; /* ocupar quase toda a largura */
+    max-width: 95%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem; /* reduz espaço topo */
+    margin-top: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 
   .content-wrapper {
-    padding-top: 1rem; /* diminui espaço entre header e conteúdo */
+    padding-top: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 
   .menu-toggle {
-    display: block; /* botão visível no mobile */
+    display: block;
   }
 
   header nav {
-    display: none; /* esconde menu padrão */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 44px; /* logo + header altura */
+    top: 44px;
     right: 0;
     width: 200px;
     background: linear-gradient(30deg, #55308d, #2a6099);
@@ -149,7 +148,6 @@ header nav a:hover {
     padding: 0.5rem 0;
   }
 
-  /* Logo mantém tamanho fixo e margem */
   header .logo {
     font-size: 2.5rem;
     margin-left: 0.5rem;
@@ -169,7 +167,7 @@ header nav a:hover {
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   background-repeat: repeat;
-  min-height: calc(100vh - 44px - 60px); /* Ajuste 80px do header e 60px do footer (exemplo) */
+  min-height: calc(100vh - 44px - 60px);
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -197,8 +195,8 @@ section {
     font-size: clamp(3.5rem, 8vw, 7rem);
     font-weight: 500;
     margin-bottom: 1rem;
-    -webkit-text-stroke: 1px #000000; /* contorno preto de 1px */
-    -webkit-text-fill-color: #F8F8FF; /* cor interna da fonte */
+    -webkit-text-stroke: 1px #000000;
+    -webkit-text-fill-color: #F8F8FF;
     text-shadow: 0.05em 0.05em 0em #ff4000;
 }
 
@@ -215,8 +213,8 @@ section {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 500;
     margin-bottom: 1rem;
-    -webkit-text-stroke: 1px #000000; /* contorno preto de 1px */
-    -webkit-text-fill-color: #f8f8ff; /* cor interna da fonte */
+    -webkit-text-stroke: 1px #000000;
+    -webkit-text-fill-color: #f8f8ff;
     text-shadow: 0.05em 0.05em 0em #ff4000;
 }
 
@@ -228,14 +226,14 @@ section {
 }
 
 .portfolio-item {
-  border: 2px solid black; /* a moldura */
+  border: 2px solid black;
   padding: 1rem;
   max-width: 450px;
   text-align: left;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* espaçamento vertical */
+  gap: 0.5rem;
   position: relative;
   background: #f8f8ff;
   transition: box-shadow 0.01s ease-in-out;
@@ -257,7 +255,7 @@ section {
 .divider {
   height: 2px;
   background-color: black;
-  width: 100%; /* o corte no meio, metade da largura */
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -289,12 +287,12 @@ section {
   font-family: UnageoBold;
   color: inherit;
   text-decoration: none;
-  transition: all 0.01s ease; /* animação suave */
+  transition: all 0.01s ease;
 }
 
 .contact a:hover {
   font-family: UnageoBlack;
-  background: #f04000; /* aumenta a fonte no hover */
+  background: #f04000;
 }
 
 .contact h2 {
@@ -303,8 +301,8 @@ section {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 500;
     margin-bottom: 0.6rem;
-    -webkit-text-stroke: 0.66px #000000; /* contorno preto de 1px */
-    -webkit-text-fill-color: #f8f8ff; /* cor interna da fonte */
+    -webkit-text-stroke: 0.66px #000000;
+    -webkit-text-fill-color: #f8f8ff;
     text-shadow: 0.05em 0.05em 0em #ff4000;
 }
 
