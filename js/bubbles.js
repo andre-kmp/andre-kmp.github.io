@@ -2,7 +2,7 @@
 	    context = canvas.node().getContext("2d");
 
 	var numBubbles = 220;
-	var bubbleBase = 6;
+	var bubbleBase = 3;
 	var bubbleDiff = 12;
 
 	var nodes = d3.range(numBubbles).map(function() {
