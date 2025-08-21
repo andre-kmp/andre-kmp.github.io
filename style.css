@@ -175,6 +175,15 @@ header nav a:hover {
   padding-bottom: 2rem;
 }
 
+#bubbles {
+    position: absolute;
+    top: 25%;
+    width: 100vw;
+    margin-left: 25vw;
+    height: 100vh;
+    z-index: 0;
+    background: transparent;
+}
 
 
 .main-container {
@@ -183,22 +192,11 @@ header nav a:hover {
     padding: 0 2rem;
 }
 
-
-
 /* SECTIONS */
 section {
     padding: 4rem 0;
 }
 
-#bubbles {
-    position: absolute;
-    top: 0;
-    margin-left: 25%;
-    width: 50vw;
-    height: 100%;
-    z-index: 0;
-    background: transparent;
-}
 
 
 /* INTRO */
@@ -341,11 +339,13 @@ section {
   box-shadow: 0.33em 0.33em 0em #000000;
   transition: background-color 0.01s ease;
   cursor: pointer;
+  z-index: 3;
 }
 
 .back-to-top a:hover {
   background-color: #ff4000;
   font-family: "Unageo", sans-serif;
+  z-index: 3;
   
 }
 
@@ -363,7 +363,7 @@ footer a {
 }
 
 /* RESPONSIVIDADE */
-
+	
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
 
