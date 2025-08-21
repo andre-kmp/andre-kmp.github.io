@@ -154,10 +154,22 @@ header nav a:hover {
   }
 }
 
+#bubbles {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    width: 100%;
+    height: 60%;
+    z-index: 0;
+    background: transparent;
+}
+
 
 /* CONTAINER PRINCIPAL */
 
 .content-wrapper {
+  position: relative; 
+  z-index: 1; 
   background-color: #55308d;
   background-image:
     linear-gradient(rgba(51, 51, 51, .1) 2px, transparent 2px),
@@ -327,7 +339,7 @@ section {
 
 .back-to-top a:hover {
   background-color: #ff4000;
-  fontfamily: "Unageo", sans-serif;
+  font-family: "Unageo", sans-serif;
   
 }
 
@@ -401,4 +413,15 @@ footer a {
         font-size: 3.2rem;
         max-width: 100%;
     }
+
+	#bubbles {
+	    position: absolute;
+	    top: 0%;
+	    left: 0%;
+	    width: 100%;
+	    height: 60%;
+	    z-index: 0;
+	    background: transparent;
+}
+    
 }
