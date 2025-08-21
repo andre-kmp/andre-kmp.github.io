@@ -154,15 +154,6 @@ header nav a:hover {
   }
 }
 
-#bubbles {
-    position: absolute;
-    top: 0%;
-    left: 20%;
-    width: 100%;
-    height: 60%;
-    z-index: 0;
-    background: transparent;
-}
 
 
 /* CONTAINER PRINCIPAL */
@@ -185,16 +176,30 @@ header nav a:hover {
 }
 
 
+
 .main-container {
     max-width: 70%;
     margin: 10vh auto 0 auto;
     padding: 0 2rem;
 }
 
+
+
 /* SECTIONS */
 section {
     padding: 4rem 0;
 }
+
+#bubbles {
+    position: absolute;
+    top: 0;
+    margin-left: 25%;
+    width: 50vw;
+    height: 100%;
+    z-index: 0;
+    background: transparent;
+}
+
 
 /* INTRO */
 .intro {
@@ -211,6 +216,7 @@ section {
     -webkit-text-fill-color: #F8F8FF;
     text-shadow: 0.05em 0.05em 0em #ff4000;
 }
+
 
 /* PORTFOLIO */
 
@@ -382,6 +388,11 @@ footer a {
         gap: 1rem;
     }
 
+	#bubbles {
+	    display: none;
+	}
+
+
 	.intro {
 	    max-width: 100%;
 	    margin-left: 0;
@@ -415,13 +426,7 @@ footer a {
     }
 
 	#bubbles {
-	    position: absolute;
-	    top: 0%;
-	    left: 0%;
-	    width: 100%;
-	    height: 60%;
-	    z-index: 0;
-	    background: transparent;
-}
+	    display: none;
+	}
     
 }

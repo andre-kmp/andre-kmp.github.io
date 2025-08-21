@@ -1,7 +1,7 @@
 	var canvas = d3.select("#bubbles"),
 	    context = canvas.node().getContext("2d");
 
-	var numBubbles = 220;
+	var numBubbles = 450;
 	var bubbleBase = 3;
 	var bubbleDiff = 12;
 
@@ -24,7 +24,7 @@
 
 	    nodes.forEach(function(d, i){
 	        if(i !== 0){
-	            d.x = width * 2;
+	            d.x = Math.random() * width;
 	            d.y = Math.random() * height;
 	        }
 	    });
@@ -69,9 +69,9 @@
 	            dist = Math.sqrt(dx*dx + dy*dy);
 
 	        if(dist < 120){
-	            var r = Math.floor(Math.random()*255),
-	                g = Math.floor(Math.random()*255),
-	                b = Math.floor(Math.random()*255);
+	            var r = Math.floor((Math.random()+2)*255),
+	                g = Math.floor(Math.random()*64),
+	                b = Math.floor(Math.random()*0);
 
 	            var matches = d.color.match(/rgba\((\d+),(\d+),(\d+),([\d.]+)\)/);
 	            if(matches){
@@ -83,7 +83,7 @@
 	                cr = Math.floor(lerpColor(cr, r, 0.1));
 	                cg = Math.floor(lerpColor(cg, g, 0.1));
 	                cb = Math.floor(lerpColor(cb, b, 0.1));
-	                ca = lerpColor(ca, 0.7, 0.4);
+	                ca = lerpColor(ca, 0.95, 0.4);
 
 	                d.color = `rgba(${cr},${cg},${cb},${ca})`;
 	            }
