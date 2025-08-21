@@ -17,14 +17,15 @@
 	root.fixed = true;
 
 	function resizeCanvas() {
-	    width = canvas.node().clientWidth;
-	    height = canvas.node().clientHeight;
+	    const canvasElement = canvas.node();
+	    width = canvasElement.clientWidth;
+	    height = canvasElement.clientHeight;
 	    canvas.attr("width", width).attr("height", height);
 
 	    nodes.forEach(function(d, i){
 	        if(i !== 0){
-	            d.x = Math.random() * width;
-	            d.y = Math.random() * height*0.76;
+	            d.x = width * 2;
+	            d.y = Math.random() * height;
 	        }
 	    });
 
@@ -130,7 +131,6 @@
 	    }
 	}
 
-	resizeCanvas();
-	force.start();
-
-	window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+force.start();
+window.addEventListener("resize", resizeCanvas);
