@@ -2,7 +2,7 @@
 
 This repository contains the source code of my personal website, hosted via **GitHub Pages**.
 
-I have always wanted to build a **professional and personal hub** that brings together my portfolio, case studies, articles, and contact information. Over the past few years, I tried several different services, but each of them was missing something. A static site on GitHub Pages brings the best of all worlds — simplicity, privacy, free hosting, and a cool URL — while also allowing detailed customization (through front-end development), which is something I highly value, even as a data scientist.
+I have always wanted to build a **professional and personal hub** that brings together my portfolio, case studies, articles, and contact information. Over the past few years, I tried several different services, but each of them was missing something. A static site on GitHub Pages brings the best of all worlds (simplicity, privacy, free hosting, and a cool URL) while also allowing detailed customization (through front-end development), which is something I highly value, even as a data scientist.
 
 I plan to add the case studies and have the website ready by **September 6th, 2025**.
 
