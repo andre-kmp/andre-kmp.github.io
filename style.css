@@ -246,8 +246,8 @@ header nav a:hover {
 #bubbles {
     position: absolute;
     top: 25%;
-    width: 80vw;
-    margin-left: 25vw;
+    width: 60vw;
+    margin-left: 35vw;
     height: 100vh;
     z-index: 0;
     background: transparent;
