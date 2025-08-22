@@ -1,17 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const langSelector = document.querySelector(".language-selector");
   const langBtn = langSelector.querySelector(".lang-btn");
-  const nav = document.querySelector("header nav");
 
   langBtn.addEventListener("click", (e) => {
-    e.stopPropagation(); // impede conflito com clique fora
+    e.stopPropagation(); // Impede o clique de "borbulhar" e fechar o menu principal
     langSelector.classList.toggle("open");
-
-    // se o menu principal estiver aberto, fecha
-    if (nav.classList.contains("show")) {
-      nav.classList.remove("show");
-      document.removeEventListener("click", closeNavOnClickOutside);
-    }
   });
 
   document.addEventListener("click", () => {
@@ -19,12 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Menu principal
 function toggleMenu() {
   const nav = document.querySelector("header nav");
   nav.classList.toggle("show");
 
-  // se abriu, ativa escuta para clique fora
   if (nav.classList.contains("show")) {
     document.addEventListener("click", closeNavOnClickOutside);
   } else {
