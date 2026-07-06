@@ -1,124 +1,75 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="André Klaic - Data Scientist from Tupã, SP, Brazil. This site is a hub for case studies, ideas and experiments. Feel free to reach me!" />
-    <title>André Klaic | Data Scientist, Analyst and Researcher in Tupã, São Paulo, Brazil</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+<!doctype html>
+<html>
+   <head>
+     <!-- Settings -->
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width" />
+     <!-- Search indexing -->
+     <meta name="author" content="André Klaic"/>
+     <meta
+         name="description"
+         content="Welcome to my webpage. Feel free to read my writings about my projects and thoughts. You are going to find content about data analysis and modeling." />
+     <!-- CSS  -->
+     <link href="styles/style.css" rel="stylesheet" />
+     <!-- Main font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 
-    <style>
-        @font-face {
-            font-family: "EvilEmpire";
-            src: url("fonts/Evil Empire.otf") format("truetype");
-        }
-        @font-face {
-            font-family: "Unageo";
-            src: url("fonts/Unageo-Regular.ttf") format("truetype");
-        }
-        @font-face {
-            font-family: "UnageoBold";
-            src: url("fonts/Unageo-Bold.ttf") format("truetype");
-        }
-        @font-face {
-            font-family: "UnageoBlack";
-            src: url("fonts/Unageo-Black.ttf") format("truetype");
-        }
-    </style>
-</head>
-<body>
+     <!-- Title font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 
-	<header id="top">
-	  <div class="header-container">
-	    <div class="logo"><a href="https://andre-kmp.github.io">André Klaic</a></div>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
 
-	    <nav>	    
-	      <a href="#portfolio">Case studies</a>
-	      <a href="#aboutme">About me</a>
-	      <a href="#contact">Contact</a>
-		  <div class="language-selector">
-		    <button class="lang-btn"><img src="images/icon-en.png" alt="English" class="flag-icon"> English ▾</button>
-		    <ul class="lang-menu">
-		      <li><a href="#"><img src="images/icon-en.png" alt="English" class="flag-icon"> English</a></li>
-		      <li><a href="#"><img src="images/icon-pt.png" alt="Português" class="flag-icon"> Portuguese</a></li>
-		    </ul>
-		  </div>	     
-	    </nav>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
 
-	    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-	  </div>
-	</header>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+     <!-- Browser -->
+     <link rel="icon" href="images/favicon2.svg" type="image/x-icon" />
+     <title>André Klaic</title>
+   </head>
 
+   <body>
+     <!-- Título -->
+     <h1 class="page-title">
+         <img class="title-icon" src="images/favicon2.svg" alt="heatmap icon" />
+         André Klaic
+     </h1>
+    <!--Navigation bar -->
+     <nav>
+       <ul class="main-nav">
+         <!-- Links -->
+         <li><a href="./index.html" class="active">Home</a></li>
+         <li><a href="pages/interview.html">Rarely Asked Questions</a></li>
+         <li><a href="pages/all-writings.html">List of articles</a></li>
+         <li><a href="pages/ftowbim.html">FTOWBIM</a></li>
+       </ul>
+     </nav>
+
+    <!-- Short introduction -->
+    <article class="home">
+
+       <img src="images/lelio-corner.jpg" 
+            alt="Código de configuração de criação de ambiente virtual em python"
+            class="home-img"/>
     
-	<script src="js/menu.js"></script>
+       <p class="home">The greatest paradox of my life is that I enjoy being a generalist,
+       yet I recognize greater potential for achievements in specialists.</p>
+       <p class="home">This is reflected in my career path: I have worked with in vastly different fields,
+       ranging from energy harvesting systems to market research.</p>
+       <p class="home">The common thread running through all of this is <span class="highlight">data analysis</span>, which has led me to various areas 
+       of interest, such as <span class="highlight">pattern recognition</span>, <span class="highlight">predictive modeling</span> and (why not) <span class="highlight">design</span>.</p>
+       <p class="home">This page is about all of that.</p>
+     </article>
+       
+   </body>
 
-    
-	<div class="content-wrapper">
-	    <canvas id="bubbles"></canvas>
-	    <main class="main-container">
-            
-	        <section class="intro">
-	            <h1>André Klaic</h1>
-                <p>Data professional — with a focus on exploratory data analysis and predictive modeling.
-                My journey began in 2019 with <b>applied statistics in scientific research</b>.
-                Since then, I have worked with data in different fields, with the last three years 
-                dedicated to market research. As a Biosystems Engineer, I bring <b>systemic thinking to problem-solving</b>. 
-                Currently studying Data Science at UNIVESP (Brazil). I also love to code :)<br><br>
-                <b>This website is still under construction</b>.
-	        </section>
-
-	        <section class="portfolio">
-	            <h2>Case studies</h2>
-	            <div class="portfolio-grid">
-	                <a href="#" class="portfolio-item">
-	                    <img src="images/project1.jpg" alt="Projeto 1">
-	                    <div class="divider"></div>
-	                    <h3>Climate forecasting</h3>
-	                    <p>Título e imagem meramente ilustrativos, pois esse site ainda não está oficialmente no ar :)</p>
-	                </a>
-	                <a href="#" class="portfolio-item">
-	                    <img src="images/project2.jpg" alt="Projeto 2">
-	                    <div class="divider"></div>
-	                    <h3>Getting insights from categorical data</h3>
-	                    <p>Título e imagem meramente ilustrativos, pois esse site ainda não está oficialmente no ar :)</p>
-	                </a>
-	                <a href="#" class="portfolio-item">
-	                    <img src="images/project3.jpg" alt="Projeto 3">
-	                    <div class="divider"></div>
-	                    <h3>Setting up the environment</h3>
-	                    <p>Título e imagem meramente ilustrativos, pois esse site ainda não está oficialmente no ar :)</p>
-	                </a>
-	            </div>
-	        </section>
-
-	        <!-- TERCEIRA SECTION -->
-	        <section id="contact" class="contact">
-	            <h2>Contact</h2>
-	            <p>
-	            I’m open to discussing any of the topics featured here, at any level.<br>
-	            You can reach me <a href="mailto:andreklaic@gmail.com" aria-label="Send an email to André Klaic">by email</a> or through social media:<br><br>
-	            </p>
-	            <p>
-	                <a href="https://github.com/andre-kmp">GitHub</a> | 
-	                <a href="https://linkedin.com/in/andreklaic">LinkedIn</a> | 
-	                <a href="https://www.kaggle.com/andrekmp">Kaggle</a>
-	            </p>
-
-               <div class="back-to-top">
-                   <a href="#top"> ↑ Back to top</a>
-               </div>
-	            
-	        </section>
-	    </main>
-	</div>
-
-    <footer>
-        <p>© 2025 andre-kmp — Inspired by <a href="https://www.jeyausten.com/">Jey Austen</a>. Built with the help of ChatGPT (GPT-5, OpenAI) for CSS and HTML.</p>
-    </footer>
-
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="js/bubbles.js"></script>
-
-</body>
 </html>
