@@ -32,15 +32,6 @@ body {
 	padding: 0 0px 20px 0px;
 }
 
-@media (width <= 800px){
-
-    /*settings to improve readability in thicker screen sizes*/
-
-	body {
-		background-color: blue;
-	}
-}
-
 /* Header  */
 
 h1.page-title {
@@ -257,7 +248,6 @@ span.highlight {
 
 .box img {
     float: left;
-    background: blue;
 	height: 100px;
 	margin-right: 1em;
 	border-radius: 3px;
