@@ -39,7 +39,7 @@ h1.page-title {
     font-weight: 400;
     font-style: normal;
 	color: var(--palette1-color4);
-	font-size: clamp(1.75rem, 4vw + 1rem, 4.38rem);
+	font-size: clamp(2rem, 4vw + 1.5rem, 4.38rem);
 	padding: 0px 20px 0px 20px;
 	text-align: left;
 }
@@ -63,6 +63,7 @@ nav {
 	display: flex;
 	padding: 0px 0px 0px 0px;
     border-bottom: 1px solid var(--palette1-color4);
+    font-size: clamp(0.9rem, 90%, 1rem);
 }
 
 .main-nav li {
@@ -107,8 +108,9 @@ nav {
 	display: None;
 	list-style: none;
 	padding: 0px 0px 0px 0px;
-    border-bottom: 1px solid var(--palette1-color4);	
-}
+    border-bottom: 1px solid var(--palette1-color4);
+    /*font-size: clamp(0.8rem, 90%, 1rem);*/
+}  
 
 .tiny-nav li {
 	font-size: inherit;
@@ -117,7 +119,7 @@ nav {
 }
 
 .tiny-nav a {
-	padding: 0.5em 1.5em;
+    padding: 0.3em 1.1em;
 	display: block;
 }
 
@@ -156,18 +158,9 @@ article.home {
 }
 
 .home-img{
-    /*
-	width: 35%;
-	max-width: 500px;
-	min-width: 35%;
-    */
     margin: 0 auto;
-    /*margin: clamp(1.63rem, 4vw + 1rem ,4.06rem);*/
     width: 80%;
     height: auto;
-	/*padding-right: 50px;
-	align-self: center;*/
-	/*object-fit: contain;*/
 }
 
 div.text-block {
@@ -188,7 +181,7 @@ p.home {
 
 h2 {
 	text-align: left;
-	font-size: 36px;
+	font-size: 2.25em;
 	margin-bottom: 0;
 }
 
@@ -203,7 +196,7 @@ p.published_on::before {
 
 
 h3 {
-	font-size: 24px;
+	font-size: 1.5em;
 	margin-bottom: 0;
 }
 
@@ -218,6 +211,10 @@ article.content {
 	line-height: 2;
 }
 
+.content h3+p {
+    margin-top: 0.25em;
+}
+
 /* The settings below add extra emphasis in important lists inside a text */
 li strong, .big_list li::marker {
 	font-size: 1.2em;
@@ -227,9 +224,11 @@ li p:first-of-type {
 	margin-top: 5px;
 }
 
-li p:last-of-type {
+li p:last-of-type, h3 p:last-of-type {
 	margin-bottom: 2.5em;
 }
+
+
 
 /* End of the lists settings */
 
@@ -298,7 +297,7 @@ span.highlight {
 
 .box {
     width: inherit;
-    margin: 20px 0 1em 0;
+    margin: 1em 0 1em 0;
     background: transparent;
     text-decoration: none;
 }
@@ -410,27 +409,14 @@ a:hover {
 	font-weight: bold;
 }
 
+@media (max-width: 600px) {
 
-/* Para telas menores que 768px */
-@media (max-width: 1095px) {
+    /* The elements are organized in the order I adjusted and tested them */
 
-	body {
-		
-	}
-
-}
-
-/* body settings for 1095 <= width <= 750 */
-@media (max-width: 1095px) {
-
-	body {
-        width: 95vw;
-	}
-
-}
-
-@media (max-width: 660px) {
-
+    html {
+    	font-size: clamp(0.8rem, 90%, 1rem);
+    }
+    
 	.main-nav {
 		display: None;
 	}
@@ -439,6 +425,55 @@ a:hover {
 		display: flex;
 	}
 
+	article.home {
+		display: block;
+	}
+
+	div.text-block {
+	    /*font-size: clamp(0.8rem, 90%, 1rem);*/
+		max-height: 50vh;
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+	}
+
+	.home-img{
+	    margin: 2em auto 0em auto;
+	    width: auto;
+	    height: 60vw;
+	}
+
+	.container {
+	    justify-content: left;
+	    width: 96%;
+	    display: grid;
+	    grid-template-columns: 100%;
+		margin-top: 1.5em;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.box {
+	    width: inherit;
+	    margin: 1em 0 1em 0;
+	    background: transparent;
+	    text-decoration: none;
+	}
+
+	.box img {
+	    float: left;
+		height: 60px;
+		margin-right: 1em;
+		border-radius: 3px;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+	    font-size: 1.25em;
+	}
+	
 	
 
 }
