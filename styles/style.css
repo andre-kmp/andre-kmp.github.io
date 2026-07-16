@@ -177,6 +177,11 @@ p.home {
 	letter-spacing: 1px;
 }
 
+p.home:first-of-type{
+	margin-top: 0px;
+}
+
+
 /* Utils for every published text */
 
 h2 {
